@@ -1,8 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "ESNext",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "types": ["vite/client"],
+    "typeRoots":["src/types"],
     "allowJs": false,
     "skipLibCheck": false,
     "esModuleInterop": false,
